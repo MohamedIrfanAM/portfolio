@@ -1,7 +1,14 @@
-import Image from 'next/image'
+import { Hero,Nav,About,Projects,Experience,Contact} from '@/components'
 
 export default function Home() {
   return (
-    <h1> Mohamed Irfan Rashid AM</h1>
+    <main>
+      <Hero />
+      <Nav />
+      <About/>
+      <Experience/>
+      <Projects/>
+      <Contact/>
+     </main>
   )
 }

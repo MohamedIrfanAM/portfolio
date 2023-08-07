@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 167, 236, 1) 0%,
+    rgba(5, 103, 255, 1) 0%,
+    rgba(0, 214, 236, 1) 100%,
+    rgba(8, 28, 41, 1) 100%
+  );
+  color: #081c29;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
