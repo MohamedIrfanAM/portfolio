@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Link } from "react-scroll"
 import irfanPotrait from "public/irfan-neon.png"
 import { Dancing_Script } from "next/font/google"
-import { AiOutlineGithub,AiFillLinkedin,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai"
+import { AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai"
 
 const dancing_script = Dancing_Script({
   subsets:['latin'],
