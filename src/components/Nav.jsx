@@ -16,7 +16,7 @@ const Nav = () => {
 
       <Link to='about' smooth={true} spy={true} activeClass='active' className='group relative rounded-full hover:text-secondary [&.active]:hover:text-black'>
         <div className=' absolute hidden sm:group-hover:flex right-14 top-4 justify-items-end items-center'>
-          <div className='text-primary text-[12px] bg-black p-1'>About</div>
+          <div className='text-primary text-[12px] bg-black p-1'>Profile</div>
           <div className='border-solid border-l-black border border-y-transparent border-y-[6px] border-l-8 border-r-0 h-[5px]'></div>
         </div>
         <AiOutlineUser className='cursor-pointer m-4 text-2xl sm:text-xl group-hover:scale-110'/>
