@@ -1,5 +1,5 @@
 'use client'
-import {AiOutlineHome,AiOutlineContacts,AiOutlineProject,AiOutlineProfile,AiOutlineLaptop} from 'react-icons/ai'
+import {AiOutlineHome,AiOutlineContacts,AiOutlineProject,AiOutlineUser,AiOutlineLaptop} from 'react-icons/ai'
 import { Link } from 'react-scroll'
 
 const Nav = () => {
@@ -19,7 +19,7 @@ const Nav = () => {
           <div className='text-primary text-[12px] bg-black p-1'>About</div>
           <div className='border-solid border-l-black border border-y-transparent border-y-[6px] border-l-8 border-r-0 h-[5px]'></div>
         </div>
-        <AiOutlineProfile className='cursor-pointer m-4 text-2xl sm:text-xl group-hover:scale-110'/>
+        <AiOutlineUser className='cursor-pointer m-4 text-2xl sm:text-xl group-hover:scale-110'/>
       </Link>
   
       <Link to='experience' smooth={true} spy={true} activeClass='active' className='group relative rounded-full hover:text-secondary [&.active]:hover:text-black'>
