@@ -1,6 +1,7 @@
 'use client'
 import { useScroll,motion } from "framer-motion"
 import { useRef } from "react"
+import { achievemetns } from "@/constants"
 
 const StarOutline = ({ width, height, color,reference }) => {
   const {scrollYProgress} = useScroll({
@@ -52,8 +53,9 @@ const Achievements  = () => {
     <div ref={achievementDiv} className="relative ml-3">
       <div className="absolute w-[4px] rounded-full bg-black left-1 h-full origin-top" style={{scaleY:scrollYProgress}}/>
       <motion.div className="absolute w-[4px] rounded-full bg-cyan-400 left-1 h-full origin-top" style={{scaleY:scrollYProgress}}/>
-      <Details title="First Prize in Mazerunner competition" conductor={"Hestia 2023,TKM collge of Engineering"} discription={"Build an autonomouse maze solving robot which works on the principle of DFS"} />
-      <Details title="Second Prize in Sonorous Hackathon" conductor={"IEDC CET"} discription={"Developed a web-camera controlled mouse system that can effectively serve as a replacement for the traditional computer mouse for individuals with limited use of their forelimbs."} />
+      {achievemetns.map(({id,title,conductor,discription}) => (
+        <Details key={id} title={title} conductor={conductor} discription={discription} />
+      ))}
     </div>
   )
 }

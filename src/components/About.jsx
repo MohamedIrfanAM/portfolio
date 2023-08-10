@@ -2,6 +2,7 @@
 import { useState } from "react"
 import Education from "./Education.jsx"
 import Achievements from "./Achievements.jsx"
+import { about } from "@/constants/index.js"
 
 const About = () => {
   const [tab,setTab] = useState(1)
@@ -10,7 +11,7 @@ const About = () => {
     <section className="min-h-screen p-1 flex flex-col sm:flex-row sm:items-start sm:justify-between" id='about'>
       <div className="mt-3 flex flex-col justify-center items-center text-center sm:mt-[150px] sm:text-left sm:ml-4 sm:items-start">
         <div className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan-400">About Me</div>
-        <div className="max-w-sm text-primary mt-2 leading-6 sm:max-w-lg sm:text-[17px] ">I'm a dedicated and passionate computer science student who embarked on my programming journey five years ago. What began as a mere interest has blossomed into a profound love for coding, propelling me to undertake a multitude of projects that span various domains. From crafting intricate robotics projects using Arduino, to delving into the depths of back-end development using Python and JavaScript, I've honed my skills through hands-on experiences. As an avid competitive programmer, I take on challenges with enthusiasm, boasting a commendable rating of over 1000 on Codeforces. My portfolio is a testament to my growth, showcasing my commitment to innovation, problem-solving, and the limitless possibilities that the world of computer science holds.</div>
+        <div className="max-w-sm text-primary mt-2 leading-6 sm:max-w-lg sm:text-[17px] ">{about}</div>
       </div>
 
       <div className="sm:hidden">

@@ -1,6 +1,7 @@
 'use client'
 import { motion,useScroll } from "framer-motion"
 import { useRef } from "react"
+import { education } from "@/constants"
 
 const Circle =  ({ reference }) => {
   const {scrollYProgress} = useScroll({
@@ -40,8 +41,9 @@ const Education = () => {
       <div className="absolute w-[4px] rounded-full bg-black left-3 h-full origin-top" style={{scaleY:scrollYProgress}}/>
       <motion.div className="absolute w-[4px] rounded-full bg-cyan-400 left-3 h-full origin-top" style={{scaleY:scrollYProgress}}/>
       <ul className="flex flex-col justify-center gap-3 ml-8 mt-1 relative">
-        <Details course={"Higer Secondary - Computer Science"} institute={"GVHSS Valapad,Thrissur"} grade={"Grade:97%"} year={"2020-2022"}/>
-        <Details course={"B.Tech Computer Science and Engineering"} institute={"Collge of Engineering Trivandrum"} year={"2022-2026"} grade={"CGPA:9.59"}/>
+        {education.map(({id,course,institute,year,grade}) => (
+          <Details key={id} course={course} institute={institute} grade={grade} year={year}/>
+        ))} 
       </ul>
     </div>
   )
