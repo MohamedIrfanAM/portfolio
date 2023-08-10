@@ -3,25 +3,13 @@ import { motion,useScroll } from "framer-motion"
 import { useRef } from "react"
 import { education } from "@/constants"
 import styles from "@/app/style"
-
-const Circle =  ({ reference }) => {
-  const {scrollYProgress} = useScroll({
-    target:reference,
-    offset:["end 0.9","start center"]
-  })
-  return (
-    <svg height="25" width="25" className="absolute -left-7 -rotate-90">
-      <motion.circle cx="10" cy="10" r="10" stroke="cyan" fill="#081c29" style={{pathLength:scrollYProgress}} stroke-width="3"/>
-      <circle cx="10" cy="10" r="5" fill="cyan" stroke-width="0" className="animate-pulse"/>
-    </svg>
-  )
-}
+import CircleOutline from "./CircleIcon"
 
 const Details = ({course,institute,year,grade}) => {
   const listRef = useRef(null)
   return(
     <li className="flex flex-col" ref={listRef}>
-      <Circle reference={listRef}/>
+      <CircleOutline reference={listRef}/>
       <div className={`text-lg font-bold ${styles.text_gradient} decoration-cyan-500 underline`}>{course}</div>  
       <div className="text-md text-primary font-bold">{institute}</div>
       <div text className="text-md text-secondary">{year}</div>
