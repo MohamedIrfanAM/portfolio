@@ -2,6 +2,7 @@
 import { useScroll,motion } from "framer-motion"
 import { useRef } from "react"
 import { achievemetns } from "@/constants"
+import styles from "@/app/style"
 
 const StarOutline = ({ width, height, color,reference }) => {
   const {scrollYProgress} = useScroll({
@@ -35,7 +36,7 @@ const Details = ({title,conductor,discription}) => {
     <div className="px-2 ml-2 mt-3 sm:ml-2 relative">
       <StarOutline width={25} height={25} color={"cyan"} reference={detailRef}/>
       <div className="ml-1">
-        <h1 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan-400 decoration-cyan-500 underline">{title}</h1>
+        <h1 className={`text-lg font-semibold ${styles.text_gradient} decoration-cyan-500 underline`}>{title}</h1>
         <h2 className="text-primary font-semibold">{conductor}</h2>
         <h2 className="text-secondary max-w-[400px] sm:max-w-[350px]">{discription}</h2>
       </div>

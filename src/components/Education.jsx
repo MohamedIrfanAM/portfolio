@@ -2,6 +2,7 @@
 import { motion,useScroll } from "framer-motion"
 import { useRef } from "react"
 import { education } from "@/constants"
+import styles from "@/app/style"
 
 const Circle =  ({ reference }) => {
   const {scrollYProgress} = useScroll({
@@ -21,7 +22,7 @@ const Details = ({course,institute,year,grade}) => {
   return(
     <li className="flex flex-col" ref={listRef}>
       <Circle reference={listRef}/>
-      <div className="text-lg font-bold  bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan-400 decoration-cyan-500 underline">{course}</div>  
+      <div className={`text-lg font-bold ${styles.text_gradient} decoration-cyan-500 underline`}>{course}</div>  
       <div className="text-md text-primary font-bold">{institute}</div>
       <div text className="text-md text-secondary">{year}</div>
       <div className="text-md text-secondary">{grade}</div>

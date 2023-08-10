@@ -3,6 +3,7 @@ import { useState } from "react"
 import Education from "./Education.jsx"
 import Achievements from "./Achievements.jsx"
 import { about } from "@/constants/index.js"
+import styles from "@/app/style.js"
 
 const About = () => {
   const [tab,setTab] = useState(1)
@@ -10,7 +11,7 @@ const About = () => {
   return (
     <section className="min-h-screen p-1 flex flex-col sm:flex-row sm:items-start sm:justify-between" id='about'>
       <div className="mt-3 flex flex-col justify-center items-center text-center sm:mt-[150px] sm:text-left sm:ml-4 sm:items-start">
-        <div className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan-400">About Me</div>
+        <div className={`text-3xl sm:text-4xl font-bold ${styles.text_gradient}`}>About Me</div>
         <div className="max-w-sm text-primary mt-2 leading-6 sm:max-w-lg sm:text-[17px] ">{about}</div>
       </div>
 
@@ -22,11 +23,11 @@ const About = () => {
         {tab == 1 ? <Education/> : <Achievements/>}
       </div>
       <div className="hidden sm:block mt-[150px]">
-        <div className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan-400 mb-4">Education</div>
+        <div className={`text-3xl sm:text-4xl font-bold mb-4 ${styles.text_gradient}`}>Education</div>
         <Education/>
       </div>
       <div className="hidden sm:block mr-16 mt-[150px]">
-        <div className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan-400">Achievements</div>
+        <div className={`text-3xl sm:text-4xl font-bold ${styles.text_gradient}`}>Achievements</div>
         <Achievements/>
       </div>
     </section>
