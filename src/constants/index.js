@@ -1,4 +1,5 @@
 import {AiOutlineHome,AiOutlineContacts,AiOutlineProject,AiOutlineUser,AiOutlineLaptop,AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
+import { arduino,c,cpp,react,nextjs,javascript,python,mongodb,postegres,linux,tailwind, codeforces } from '@/assets'
 
 export const intro = "I'm an enthusiastic student of computer science, well-versed in DSA, Robotics, Frontend, Backend, and numerous other domains. I thrive on expanding my knowledge and skills in these areas while seeking new challenges to conquer."
 
@@ -85,4 +86,67 @@ export const education = [
     year:"2022-2026",
     grade:"CGPA:9.59"
   }
+]
+
+export const skills = [
+  {
+    id:1,
+    title:"C++",
+    icon:cpp,
+  },
+  {
+    id:4,
+    title:"C",
+    icon:c,
+  },
+  {
+    id:2,
+    title:"Python",
+    icon:python,
+  },
+  {
+    id:3,
+    title:"JavaScript",
+    icon:javascript,
+  },
+  {
+    id:6,
+    title:"ReactJS",
+    icon:react
+  },
+  {
+    id:9,
+    title:"Tailwind",
+    icon:tailwind
+  },
+  {
+    id:7,
+    title:"NextJS",
+    icon:nextjs
+  },
+  {
+    id:10,
+    title:"Linux",
+    icon:linux
+  },
+  {
+    id:11,
+    title:"Codeforces",
+    icon:codeforces
+  },
+  {
+    id:7,
+    title:"MongoDB",
+    icon:mongodb
+  },
+  {
+    id:8,
+    title:"PostegreSQL",
+    icon:postegres
+  },
+  {
+    id:5,
+    title:"Arduino",
+    icon:arduino
+  },
 ]
