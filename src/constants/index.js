@@ -150,3 +150,66 @@ export const skills = [
     icon:arduino
   },
 ]
+
+export const skillsGrid = [
+  [ {
+    id:1,
+    title:"C++",
+    icon:cpp,
+  },
+  {
+    id:4,
+    title:"C",
+    icon:c,
+  },
+  {
+    id:2,
+    title:"Python",
+    icon:python,
+  },
+  {
+    id:3,
+    title:"JavaScript",
+    icon:javascript,
+  }],
+  [{
+    id:6,
+    title:"ReactJS",
+    icon:react
+  },
+  {
+    id:9,
+    title:"Tailwind",
+    icon:tailwind
+  },
+  {
+    id:7,
+    title:"NextJS",
+    icon:nextjs
+  },
+  {
+    id:7,
+    title:"MongoDB",
+    icon:mongodb
+  }],
+  [{
+    id:10,
+    title:"Linux",
+    icon:linux
+  },
+  {
+    id:11,
+    title:"Codeforces",
+    icon:codeforces
+  },
+  {
+    id:8,
+    title:"PostegreSQL",
+    icon:postegres
+  },
+  {
+    id:5,
+    title:"Arduino",
+    icon:arduino
+  }],
+]
