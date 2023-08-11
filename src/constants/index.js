@@ -1,5 +1,6 @@
-import {AiOutlineHome,AiOutlineContacts,AiOutlineProject,AiOutlineUser,AiOutlineLaptop,AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
+import {AiOutlineYoutube,AiOutlineHome,AiOutlineContacts,AiOutlineProject,AiOutlineUser,AiOutlineLaptop,AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
 import { arduino,c,cpp,react,nextjs,javascript,python,mongodb,postegres,linux,tailwind, codeforces } from '@/assets'
+import { mazecruizer,books2notion,contest2calender,cameraControlledMouse,writingMachine } from '../../public'
 
 export const intro = "I'm an enthusiastic student of computer science, well-versed in DSA, Robotics, Frontend, Backend, and numerous other domains. I thrive on expanding my knowledge and skills in these areas while seeking new challenges to conquer."
 
@@ -212,4 +213,47 @@ export const skillsGrid = [
     title:"Arduino",
     icon:arduino
   }],
+]
+
+export const projects = [
+  {
+    id:1,
+    title:"MazeCruizer",
+    discription:"An autonomous maze solving robot using DFS",
+    image:mazecruizer,
+    icon:<AiOutlineGithub/>,
+    link:"https://github.com/MohamedIrfanAM/Arduino/tree/master/MazeCruizer"
+  },
+  {
+    id:2,
+    title:"Books2Notion",
+    discription:"Python script for syncing Google Play Books highlights to Notion",
+    image:books2notion,
+    icon:<AiOutlineGithub/>,
+    link:"https://github.com/MohamedIrfanAM/books2notion"
+  },
+  {
+    id:3,
+    title:"Contest2Calender",
+    discription:"Python script to sync CP contests date to Google calander todoist",
+    image:contest2calender,
+    icon:<AiOutlineGithub/>,
+    link:"https://github.com/MohamedIrfanAM/contest2calender"
+  },
+  {
+    id:4,
+    title:"Camera Contolled Mouse",
+    discription:"Program for controlling mouse using facial expressions implmented using OpenCV",
+    image:cameraControlledMouse,
+    icon:<AiOutlineGithub/>,
+    link:"https://github.com/MohamedIrfanAM/CameraControlledMouse"
+  },
+  {
+    id:5,
+    title:"Writing Machine",
+    discription:"GRBL based 2D plotter that can draw write with corresponding GCODE",
+    image:writingMachine,
+    icon:<AiOutlineYoutube/>,
+    link:"https://photos.app.goo.gl/ma2X6CbEAKHCredk9"
+  },
 ]
