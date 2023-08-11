@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { Link as Lk} from "react-scroll"
 import Link from "next/link"
-import irfanPotrait from "public/irfan-neon.png"
+import { irfanPortrait } from "../../public"
 import { Dancing_Script } from "next/font/google"
 import { intro, socialLinks } from "@/constants"
 import styles from "@/app/style"
@@ -18,7 +18,7 @@ const Hero = () => {
       <div className={`text-2xl sm:text-3xl font-bold ${dancing_script.className} ${styles.text_gradient}`}>@irfan_</div>
       <div className="flex flex-col justify-center sm:flex-row-reverse sm:items-center items-center w-screen sm:mt-0 sm:justify-around">
         <div>
-          <Image src={irfanPotrait} width={900} alt="Irfan Neon Triangle Portrait"/>
+          <Image src={irfanPortrait} width={900} alt="Irfan Neon Triangle Portrait"/>
         </div>
         <div className="flex flex-col sm:pl-[120px] sm:pt-4" >
           <div className="text-center sm:text-left">
