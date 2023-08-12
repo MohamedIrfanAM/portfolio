@@ -1,6 +1,8 @@
 'use client'
 import { Link } from 'react-scroll'
 import { navLinks } from '@/constants'
+import { motion } from 'framer-motion'
+import { slideIn } from '@/app/style'
 
 const Item = ({id,title,icon}) => {
   return (
@@ -16,11 +18,11 @@ const Item = ({id,title,icon}) => {
 
 const Nav = () => {
   return (
-    <div className="z-50 fixed bottom-0 mx-auto inset-x-0 h-[60px] rounded-full  max-w-[450px] w-screen text-primary bg-blue-500/10 flex flex-row justify-between backdrop-blur-sm sm:flex-col sm:h-[400px] sm:w-[50px] sm:mr-2 sm:my-auto sm:inset-y-0 items-center">
+    <motion.div className="z-50 fixed bottom-0 mx-auto inset-x-0 h-[60px] rounded-full  max-w-[450px] w-screen text-primary bg-blue-500/10 flex flex-row justify-between backdrop-blur-sm sm:flex-col sm:h-[400px] sm:w-[50px] sm:mr-2 sm:my-auto sm:inset-y-0 items-center" variants={slideIn("right","spring",0.75)} initial='hidden' animate='visible'>
       {navLinks.map(({id,title,icon}) => (
         <Item key={id} id={id} title={title} icon={icon}/>
       ))}
-    </div>
+    </motion.div>
   )
 }
 
