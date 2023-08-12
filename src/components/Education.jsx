@@ -2,19 +2,19 @@
 import { motion,useScroll } from "framer-motion"
 import { useRef } from "react"
 import { education } from "@/constants"
-import styles from "@/app/style"
+import styles, { slideIn, staggerContainer } from "@/app/style"
 import CircleOutline from "./CircleIcon"
 
 const Details = ({course,institute,year,grade}) => {
   const listRef = useRef(null)
   return(
-    <li className="flex flex-col" ref={listRef}>
+    <motion.li className="flex flex-col" ref={listRef} variants={slideIn("up","spring",0.75)} initial='hidden' whileInView='visible'>
       <CircleOutline reference={listRef}/>
       <div className={`text-lg font-bold ${styles.text_gradient} decoration-cyan-500 underline`}>{course}</div>  
       <div className="text-md text-primary font-bold">{institute}</div>
       <div text className="text-md text-secondary">{year}</div>
       <div className="text-md text-secondary">{grade}</div>
-    </li>
+    </motion.li>
   )
 }
 
@@ -29,11 +29,11 @@ const Education = () => {
     <div className="w-full relative mt-2" ref={educationDiv}>
       <div className="absolute w-[4px] rounded-full bg-black left-3 h-full origin-top" style={{scaleY:scrollYProgress}}/>
       <motion.div className="absolute w-[4px] rounded-full bg-cyan-400 left-3 h-full origin-top" style={{scaleY:scrollYProgress}}/>
-      <ul className="flex flex-col justify-center gap-3 ml-8 mt-1 relative">
+      <motion.ul className="flex flex-col justify-center gap-3 ml-8 mt-1 relative" variants={staggerContainer(0.5,0.2)} initial="hidden" whileInView="visible">
         {education.map(({id,course,institute,year,grade}) => (
           <Details key={id} course={course} institute={institute} grade={grade} year={year}/>
         ))} 
-      </ul>
+      </motion.ul>
     </div>
   )
 }
