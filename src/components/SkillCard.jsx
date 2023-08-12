@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import styles, { fadeIn } from "@/app/style";
+import styles, { slideIn } from "@/app/style";
 
-const SkillCard = ({ index, title, icon }) => (
+const SkillCard = ({ title, icon }) => (
   <Tilt className='sm:w-[150px] w-[150px]'>
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={slideIn("left","spring",0.75)}
       className='w-[150px] p-[1px] rounded-[20px] bg-gradient-to-r from-primary to-cyan-400 shadow-black shadow-md'
     >
       <div

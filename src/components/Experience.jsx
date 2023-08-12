@@ -1,10 +1,11 @@
 'use client'
 import { cyanGlobeBackground } from "../../public";
 import Image from "next/image";
-import styles from "@/app/style";
+import styles, { staggerContainer } from "@/app/style";
 import { skills } from "@/constants";
 import Slider from "./Slider";
 import SkillCard from "./SkillCard";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
@@ -14,11 +15,11 @@ const Experience = () => {
     <div className="sm:hidden">
       <Slider/>
     </div>
-    <div className="justify-around max-w-[800px] flex-wrap gap-6 mt-5 hidden sm:flex">
+    <motion.div className="justify-around max-w-[800px] flex-wrap gap-6 mt-5 hidden sm:flex" variants={staggerContainer(0.1,0.2)} initial="hidden" whileInView="visible">
       {skills.map(({id,title,icon}) => (
         <SkillCard key={id} title={title} icon={icon}/>
       ))}
-    </div>
+    </motion.div>
   </div>
   )
 }
