@@ -1,4 +1,5 @@
 import { Hero,Nav,About,Projects,Experience,Contact} from '@/components'
+import { Toaster } from 'react-hot-toast'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Experience/>
       <Projects/>
       <Contact/>
+      <Toaster position='top-right'/>
      </main>
   )
 }
