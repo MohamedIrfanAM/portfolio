@@ -1,4 +1,5 @@
-import {AiOutlineYoutube,AiOutlineHome,AiOutlineContacts,AiOutlineProject,AiOutlineUser,AiOutlineLaptop,AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
+import {AiOutlineYoutube,AiOutlineHome,AiOutlineContacts,AiOutlineUser,AiOutlineLaptop,AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
+import {PiWrench} from 'react-icons/pi'
 import { arduino,c,cpp,react,nextjs,javascript,python,mongodb,postegres,linux,tailwind, codeforces } from '@/assets'
 import { mazecruizer,books2notion,contest2calender,cameraControlledMouse,writingMachine } from '../../public'
 
@@ -41,9 +42,9 @@ export const navLinks = [
     icon:<AiOutlineUser/>
   },
   {
-    id:"experience",
-    title:"Experience",
-    icon:<AiOutlineProject/>
+    id:"skills",
+    title:"Skills",
+    icon:<PiWrench/>
   },
   {
     id:"projects",

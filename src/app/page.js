@@ -1,4 +1,4 @@
-import { Hero,Nav,About,Projects,Experience,Contact} from '@/components'
+import { Hero,Nav,About,Skills,Projects,Contact} from '@/components'
 import { Toaster } from 'react-hot-toast'
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
       <Hero />
       <Nav />
       <About/>
-      <Experience/>
+      <Skills/>
       <Projects/>
       <Contact/>
       <Toaster position='top-right'/>
