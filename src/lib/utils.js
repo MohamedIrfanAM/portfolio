@@ -1,3 +1,7 @@
+'use client'
+
+import { useState, useEffect } from 'react';
+
 export const validateString = (value,maxLength) => {
   if (!value || typeof value !== "string" || value.length > maxLength) {
     return false;
@@ -20,3 +24,54 @@ export const getErrorMessage = (error) => {
 
   return message;
 };
+
+function WindowWidth() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', updateWindowWidth);
+    return () => {
+      window.removeEventListener('resize', updateWindowWidth);
+    };
+  }, []); 
+  return windowWidth
+}
+
+export const getNumberofCols = () => {
+  let width
+  try{
+    width = WindowWidth()
+  }
+  catch(ReferenceError){
+    width = 1024
+  }
+  let cols;
+  let rows;
+  if(width < 568){
+    cols = 2; 
+    rows = 2;
+  }
+  else if(width < 768){
+    cols = 3;
+    rows = 2;
+  }
+  else if(width < 1034){
+    cols = 2;
+    rows = 3;
+  }
+  else if(width < 1360){
+    cols = 3;
+    rows = 3;
+  }
+  else{
+    cols = 4;
+    rows = 3;
+  }
+  return {
+    cols:cols,
+    rows:rows
+  }
+}

@@ -4,13 +4,15 @@ import SkillCard from './SkillCard';
 import { skills } from '@/constants';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { getNumberofCols} from '@/lib/utils';
+import { WindowWidth } from '@/lib/utils';
 
-const SkillsGrid = ({index}) => {
+const SkillsGrid = ({index,cols,rows}) => {
   return (
-    <div className='grid grid-cols-2 grid-rows-2 gap-8 mt-6 w-ful justify-items-center'>
+    <div className={`flex flex-wrap mt-6 sm:mx-4 gap-10 sm:justify-start justify-center`}>
       {(() => {
         const cards = [];
-        for (let i = index; i < Math.min(index+4,skills.length); i++) {
+        for (let i = index; i < Math.min(index+(cols*rows),skills.length); i++) {
           const {id,title,icon} = skills[i]
           cards.push(<SkillCard key={id} title={title} icon={icon}/>);
         }
@@ -21,15 +23,16 @@ const SkillsGrid = ({index}) => {
 }
 
 export default function Slider() {
+  const {cols,rows} = getNumberofCols()
   return (
-    <div>
+    <div className='md:max-w-[58%] w-full'>
       <Swiper pagination={{clickable:true}} modules={[Pagination,Autoplay]} slidesPerView={1} loop={true} autoplay={{delay: 2500,disableOnInteraction: false,}} style={{"--swiper-pagination-color": "#00a7ec"}} className="mySwiper">
         {(() => {
           const slides = [];
-          for (let i = 0; i < skills.length; i+=4) {
+          for (let i = 0; i < skills.length; i+=rows*cols) {
             slides.push(
               <SwiperSlide >
-                <SkillsGrid index={i}/>
+                <SkillsGrid index={i} cols={cols} rows={rows}/>
               </SwiperSlide>
             )
           }
