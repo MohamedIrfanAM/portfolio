@@ -5,11 +5,12 @@ import { skills } from '@/constants';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { getNumberofCols} from '@/lib/utils';
-import { WindowWidth } from '@/lib/utils';
+import { motion } from 'framer-motion';
+import { staggerContainer } from '@/app/style';
 
 const SkillsGrid = ({index,cols,rows}) => {
   return (
-    <div className={`flex flex-wrap mt-6 sm:mx-4 gap-10 sm:justify-start justify-center`}>
+    <motion.div className={`flex flex-wrap mt-6 w-full sm:mx-4 gap-10 sm:justify-start justify-center`} variants={staggerContainer(0.1,0.2)}  initial="hidden" whileInView="visible">
       {(() => {
         const cards = [];
         for (let i = index; i < Math.min(index+(cols*rows),skills.length); i++) {
@@ -18,7 +19,7 @@ const SkillsGrid = ({index,cols,rows}) => {
         }
         return cards;
       })()}
-    </div>
+    </motion.div>
   );
 }
 
