@@ -26,28 +26,22 @@ export const getErrorMessage = (error) => {
 };
 
 function WindowWidth() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+  const [windowWidth, setWindowWidth] = useState(0);
   useEffect(() => {
     const updateWindowWidth = () => {
       setWindowWidth(window.innerWidth);
     };
     window.addEventListener('resize', updateWindowWidth);
+    updateWindowWidth();
     return () => {
       window.removeEventListener('resize', updateWindowWidth);
     };
-  }, []); 
+  }, []);
   return windowWidth
 }
 
 export const getNumberofCols = () => {
-  let width
-  try{
-    width = WindowWidth()
-  }
-  catch(ReferenceError){
-    width = 1024
-  }
+  let width = WindowWidth()
   let cols;
   let rows;
   if(width < 568){
