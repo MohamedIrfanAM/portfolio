@@ -4,10 +4,11 @@ import { sendEmail } from "@/actions/sendEmail"
 import toast from 'react-hot-toast'
 import SubmitButton from "./SubmitButton"
 import {motion} from 'framer-motion'
+import Footer from "./Footer"
 
 const Contact = () => {
   return (
-    <section className="h-screen pt-24 sm:p-24" id ='contact'>
+    <section className="h-screen w-screen pt-24 sm:p-24 relative" id ='contact'>
       <motion.h1 className={`text-center text-4xl font-bold mx-10 ${styles.text_gradient}`} initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}>Contact</motion.h1>
       <motion.p className="text-primary text-center max-w-[500px] mx-auto mt-1" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}>Contact me directly at <a className="underline" href="mailto:mohamed.irfan.rashid.am@gmail.com">mohamed.irfan.rashid.am@gmail.com</a></motion.p>
       <motion.form 
@@ -41,6 +42,7 @@ const Contact = () => {
           <SubmitButton/>
         </motion.div>
       </motion.form>
+      <Footer/>
     </section>
   )
 }
