@@ -10,7 +10,7 @@ import { staggerContainer } from '@/app/style';
 
 const SkillsGrid = ({index,cols,rows}) => {
   return (
-    <motion.div className={`flex flex-wrap mt-6 w-full sm:mx-4 gap-10 sm:justify-start justify-center`} variants={staggerContainer(0.1,0.2)}  initial="hidden" whileInView="visible">
+    <motion.div className={`flex flex-wrap mt-6 mb-8 w-full sm:mx-4 gap-10 sm:justify-start justify-center`} variants={staggerContainer(0.1,0.2)}  initial="hidden" whileInView="visible">
       {(() => {
         const cards = [];
         for (let i = index; i < Math.min(index+(cols*rows),skills.length); i++) {

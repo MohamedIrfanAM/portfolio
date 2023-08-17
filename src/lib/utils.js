@@ -56,7 +56,7 @@ export const getNumberofCols = () => {
     cols = 2;
     rows = 3;
   }
-  else if(width < 1360){
+  else if(width < 1306){
     cols = 3;
     rows = 3;
   }
