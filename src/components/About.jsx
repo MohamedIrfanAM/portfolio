@@ -10,7 +10,7 @@ const About = () => {
   const [tab,setTab] = useState(1)
   console.log(tab==1)
   return (
-    <section className="min-h-screen p-1 flex flex-col sm:flex-row sm:items-start sm:justify-between" id='about'>
+    <section className="h-screen p-1 flex flex-col sm:flex-row sm:items-start sm:justify-between sm:overflow-hidden" id='about'>
       <div className="mt-3 flex flex-col justify-center items-center text-center sm:mt-[150px] sm:text-left sm:ml-4 sm:items-start">
         <motion.div className={`text-3xl sm:text-4xl font-bold ${styles.text_gradient}`} variants={slideIn("left","spring",0.75)} initial='hidden' whileInView='visible'>About Me</motion.div>
         <motion.div className="max-w-sm text-primary mt-2 leading-6 sm:max-w-lg sm:text-[17px]" variants={slideIn("up","spring",0.75)} initial='hidden' whileInView='visible'>{about}</motion.div>
