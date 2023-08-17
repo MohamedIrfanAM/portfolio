@@ -69,3 +69,24 @@ export const getNumberofCols = () => {
     rows:rows
   }
 }
+
+export const getNumberofSlides = () => {
+  let width = WindowWidth()
+  let slides;
+  if(width < 568){
+    slides = 1;
+  }
+  else if(width < 768){
+    slides = 2;
+  }
+  else if(width < 1034){
+    slides = 3;
+  }
+  else if(width < 1306){
+    slides = 4;
+  }
+  else{
+    slides = 5;
+  }
+  return slides
+}
