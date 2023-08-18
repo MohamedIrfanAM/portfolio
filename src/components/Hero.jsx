@@ -15,7 +15,7 @@ const dancing_script = Dancing_Script({
 })
 
 const Hero = () => {
-  const [subheading] = useTypewriter({words:['Software Developer','CS Student','Tech Enthusiast'],loop:{},typeSpeed:60,deleteSpeed:80})
+  const [subheading] = useTypewriter({words:['Software Developer','CS Student','Technophile','Robotics Enthusiast'],loop:{},typeSpeed:60,deleteSpeed:80})
   return (
     <section className="h-screen w-full p-1" id='hero'>
       <div className={`text-2xl sm:text-3xl font-bold ${dancing_script.className} ${styles.text_gradient}`}>@irfan_</div>
