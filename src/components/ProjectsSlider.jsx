@@ -15,7 +15,7 @@ const ProjectsSlider = () => {
   return (
       <Swiper
         effect={'coverflow'}
-        initialSlide={2}
+        initialSlide={0}
         grabCursor={true}
         mousewheel={{releaseOnEdges:true,sensitivity:0.5}}
         centeredSlides={true}
@@ -25,6 +25,7 @@ const ProjectsSlider = () => {
           stretch: 0,
           depth: 100,
           modifier: 2.5,
+          slideShadows:true
         }}
         pagination={{clickable: true }}
         style={{"--swiper-pagination-color": "#00a7ec", "--swiper-pagination-bullet-inactive-color": "#0384b9","--swiper-pagination-bullet-inactive-opacity": "0.6",}}
@@ -33,7 +34,9 @@ const ProjectsSlider = () => {
       >
       {projects.map(({id,title,discription,image,icon,link}) => (
         <SwiperSlide>
-          <ProjectCard key={id} title={title} discription={discription} image={image} icon={icon} link={link}/>
+          <div className="mb-12">
+            <ProjectCard key={id} title={title} discription={discription} image={image} icon={icon} link={link}/>
+          </div>
         </SwiperSlide>
       ))}
       </Swiper>
