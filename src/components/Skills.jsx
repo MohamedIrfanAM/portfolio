@@ -1,7 +1,7 @@
 'use client'
 import { cyanGlobeBackground } from "../../public";
 import Image from "next/image";
-import styles from "@/app/style";
+import styles from "@/lib/style";
 import Slider from "./SkillsSlider";
 
 const Skills = () => {

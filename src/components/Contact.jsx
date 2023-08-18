@@ -1,5 +1,5 @@
 'use client'
-import styles,{staggerContainer,slideIn} from "@/app/style"
+import styles,{staggerContainer,slideIn} from "@/lib/style"
 import { sendEmail } from "@/actions/sendEmail"
 import toast from 'react-hot-toast'
 import SubmitButton from "./SubmitButton"

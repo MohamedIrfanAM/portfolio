@@ -2,7 +2,7 @@
 import { useScroll,motion } from "framer-motion"
 import { useRef } from "react"
 import { achievemetns } from "@/constants"
-import styles,{staggerContainer,slideIn} from "@/app/style"
+import styles,{staggerContainer,slideIn} from "@/lib/style"
 import StarOutline from "./StarIcon"
 
 const Details = ({title,conductor,discription}) => {

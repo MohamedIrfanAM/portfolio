@@ -2,7 +2,7 @@
 import { motion,useScroll } from "framer-motion"
 import { useRef } from "react"
 import { education } from "@/constants"
-import styles, { slideIn, staggerContainer } from "@/app/style"
+import styles, { slideIn, staggerContainer } from "@/lib/style"
 import CircleOutline from "./CircleIcon"
 
 const Details = ({course,institute,year,grade}) => {

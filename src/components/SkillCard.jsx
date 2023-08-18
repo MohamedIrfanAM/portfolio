@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import styles, { slideIn } from "@/app/style";
+import styles, { slideIn } from "@/lib/style";
 
 const SkillCard = ({ title, icon }) => (
   <Tilt className='sm:w-[150px] w-[150px]'>

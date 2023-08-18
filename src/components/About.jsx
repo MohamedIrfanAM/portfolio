@@ -3,7 +3,7 @@ import { useState } from "react"
 import Education from "./Education.jsx"
 import Achievements from "./Achievements.jsx"
 import { about } from "@/constants/index.js"
-import styles,{slideIn} from "@/app/style.js"
+import styles,{slideIn} from "@/lib/style.js"
 import { motion } from "framer-motion"
 
 const About = () => {

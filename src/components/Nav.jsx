@@ -2,7 +2,7 @@
 import { Link } from 'react-scroll'
 import { navLinks } from '@/constants'
 import { motion } from 'framer-motion'
-import { slideIn } from '@/app/style'
+import { slideIn } from '@/lib/style'
 
 const Item = ({id,title,icon}) => {
   return (

@@ -1,4 +1,4 @@
-import styles from "@/app/style"
+import styles from "@/lib/style"
 import ProjectsSlider from "./ProjectsSlider"
 
 
