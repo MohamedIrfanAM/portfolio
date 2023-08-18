@@ -17,8 +17,18 @@ const About = () => {
 
       <div className="sm:hidden">
         <div className="w-[280px] h-[50px] mx-auto bg-blue-500/10 backdrop-blur-lg rounded-full mt-4 flex justify-around items-center">
-            <motion.button className={`py-[9px] px-4 rounded-full  ${tab == 1 ? 'text-dark font-semibold bg-gradient-to-r from-primary from-[50%] to-cyan-400' : 'text-primary border border-primary' } ` } onClick={()=>setTab(1) } variants={slideIn("up","spring",0.75)} initial='hidden' whileInView='visible'>Education</motion.button>
-            <motion.button className={`py-[9px] px-4 rounded-full  ${tab == 2 ? 'text-dark font-semibold bg-gradient-to-r from-primary from-[50%] to-cyan-400' : 'text-primary border border-primary' } `} onClick={()=>setTab(2)} variants={slideIn("up","spring",0.75)} initial='hidden' whileInView='visible'>Achievements</motion.button>
+            <motion.button className={`py-[9px] px-4 rounded-full  ${tab == 1 ? 'text-dark font-semibold' : 'text-primary border border-primary' } `} onClick={()=>setTab(1)} variants={slideIn("up","spring",0.75)} initial='hidden' whileInView='visible' style={{WebkitTapHighlightColor: "transparent",}}>
+              {tab == 1 &&
+                <motion.span className="-z-10 bg-gradient-to-r from-primary from-[50%] to-cyan-400 absolute inset-0 rounded-full" layoutId="bubble" style={{ borderRadius: 9999 }} transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}/>
+              }
+              Education
+            </motion.button>
+            <motion.button className={`py-[9px] px-4 rounded-full  ${tab == 2 ? 'text-dark font-semibold' : 'text-primary border border-primary' } `} onClick={()=>setTab(2)} variants={slideIn("up","spring",0.75)} initial='hidden' whileInView='visible' style={{WebkitTapHighlightColor: "transparent",}}>
+              {tab == 2 &&
+                <motion.span className="-z-10 bg-gradient-to-r from-primary from-[50%] to-cyan-400 absolute inset-0 rounded-full" layoutId="bubble" style={{ borderRadius: 9999 }} transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}/>
+              }
+              Achievements
+            </motion.button>
         </div>
         {tab == 1 ? <Education/> : <Achievements/>}
       </div>
