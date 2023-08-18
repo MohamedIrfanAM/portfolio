@@ -32,7 +32,7 @@ export default function Slider() {
           const slides = [];
           for (let i = 0; i < skills.length; i+=rows*cols) {
             slides.push(
-              <SwiperSlide >
+              <SwiperSlide key={i} >
                 <SkillsGrid index={i} cols={cols} rows={rows}/>
               </SwiperSlide>
             )

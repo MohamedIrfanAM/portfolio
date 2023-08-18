@@ -1,11 +1,7 @@
 'use client'
-import { useScroll,motion } from "framer-motion"
+import { motion } from "framer-motion"
 
-const StarOutline = ({ width, height, color,reference }) => {
-  const {scrollYProgress} = useScroll({
-    target:reference,
-    offset:["end end","start center"]
-  })
+const StarOutline = ({ width, height, color,scrollYProgress}) => {
   return(
     <svg
       width={width}

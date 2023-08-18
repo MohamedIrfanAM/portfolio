@@ -7,9 +7,13 @@ import StarOutline from "./StarIcon"
 
 const Details = ({title,conductor,discription}) => {
   const detailRef = useRef(null) 
+  const {scrollYProgress} = useScroll({
+    target:detailRef,
+    offset:["end end","start center"]
+  })
   return(
     <motion.div className="px-2 ml-2 mt-3 sm:ml-2 relative" ref={detailRef} variants={slideIn("up","spring",0.75)} initial='hidden' whileInView='visible'>
-      <StarOutline width={25} height={25} color={"cyan"} reference={detailRef}/>
+      <StarOutline width={25} height={25} color={"cyan"} scrollYProgress={scrollYProgress}/>
       <div className="ml-1">
         <h1 className={`text-lg font-semibold ${styles.text_gradient} decoration-cyan-500 underline`}>{title}</h1>
         <h2 className="text-primary font-semibold">{conductor}</h2>

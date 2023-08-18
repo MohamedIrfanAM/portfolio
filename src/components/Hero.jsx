@@ -35,7 +35,7 @@ const Hero = () => {
               <BsBoxArrowInUpRight className="ml-1 mt-1 transition-all group-hover:translate-x-1 group-hover:-translate-y-1"/>
             </Link>
             <Lk to='contact' smooth={true} spy={true}>
-              <button class="text-primary bg-dark border-primary py-2 px-4 rounded border hover:scale-110">
+              <button className="text-primary bg-dark border-primary py-2 px-4 rounded border hover:scale-110">
                 Contact
               </button>
             </Lk>

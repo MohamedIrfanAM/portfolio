@@ -33,10 +33,8 @@ const ProjectsSlider = () => {
         className="mySwiper"
       >
       {projects.map(({id,title,discription,image,icon,link}) => (
-        <SwiperSlide>
-          <div className="mb-12">
-            <ProjectCard key={id} title={title} discription={discription} image={image} icon={icon} link={link}/>
-          </div>
+        <SwiperSlide key={id} >
+          <ProjectCard title={title} discription={discription} image={image} icon={icon} link={link}/>
         </SwiperSlide>
       ))}
       </Swiper>

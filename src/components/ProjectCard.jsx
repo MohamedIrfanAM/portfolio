@@ -3,11 +3,11 @@ import Link from "next/link"
 
 const ProjectCard = ({image,title,icon,discription,link}) => {
   return (
-    <div className='mt-6 p-[1px] rounded-[20px] bg-gradient-to-r w-[400px] from-primary to-cyan-400 shadow-black shadow-md mx-4'>
+    <div className='mt-6 mb-10 p-[1px] rounded-[20px] bg-gradient-to-r w-[400px] from-primary to-cyan-400 shadow-black shadow-md mx-4'>
       <div className='bg-dark backdrop-blur-sm rounded-[20px] h-[390px] w-[400px] relative flex justify-evenly items-center flex-col overflow-hidden'>
         <div className="h-[80%] w-full absolute top-0 rounded-[20px] overflow-hidden">
-          <Link className="text-primary text-4xl hover:scale-110 hover:text-secondary" href={link} target="_blank">
-            <Image src={image} fill={true} objectFit="cover" className="border border-primary hover:scale-110"/>
+          <Link href={link} target="_blank">
+            <Image src={image} alt='Project Image' sizes="500px" fill={true} style={{objectFit:'cover'}} className="border border-primary hover:scale-110"/>
           </Link>
         </div>
         <div className="absolute bottom-0 w-full h-[20%]">
