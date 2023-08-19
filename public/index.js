@@ -5,6 +5,7 @@ import cyanGlobeBackground from './experience_bg.png'
 import contest2calender from './contest2calender.jpg'
 import writingMachine from './writingMachine.jpg'
 import cameraControlledMouse from './cameraControlledMouse.jpg'
+import esp32HomeAutomation from './esp32automation.jpg'
 
 export {
   mazecruizer,
@@ -13,5 +14,6 @@ export {
   books2notion,
   contest2calender,
   cameraControlledMouse,
-  writingMachine
+  writingMachine,
+  esp32HomeAutomation
 }

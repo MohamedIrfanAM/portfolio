@@ -1,8 +1,7 @@
 import {AiOutlineYoutube,AiOutlineHome,AiOutlineContacts,AiOutlineUser,AiOutlineLaptop,AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
 import {PiWrench} from 'react-icons/pi'
 import { arduino,c,cpp,react,nextjs,javascript,python,mongodb,postegres,linux,tailwind, codeforces,nodejs,framer,git,docker } from '@/assets'
-import { mazecruizer,books2notion,contest2calender,cameraControlledMouse,writingMachine } from '../../public'
-import { frame } from 'framer-motion'
+import { mazecruizer,books2notion,contest2calender,cameraControlledMouse,writingMachine,esp32HomeAutomation } from '../../public'
 
 export const intro = "I'm an enthusiastic student of computer science, well-versed in DSA, Robotics, Frontend, Backend, and numerous other domains. I thrive on expanding my knowledge and skills in these areas while seeking new challenges to conquer."
 
@@ -202,7 +201,7 @@ export const projects = [
   {
     id:4,
     title:"Camera Contolled Mouse",
-    discription:"Program for controlling mouse using facial expressions implmented using OpenCV",
+    discription:"Program for controlling mouse using facial expressions using OpenCV",
     image:cameraControlledMouse,
     icon:<AiOutlineGithub/>,
     link:"https://github.com/MohamedIrfanAM/CameraControlledMouse"
@@ -214,5 +213,13 @@ export const projects = [
     image:writingMachine,
     icon:<AiOutlineYoutube/>,
     link:"https://photos.app.goo.gl/ma2X6CbEAKHCredk9"
+  },
+  {
+    id:6,
+    title:"ESP32 Home Automation",
+    discription:"ESP32 based home automation using Esprainmaker platform",
+    image:esp32HomeAutomation,
+    icon:<AiOutlineGithub/>,
+    link:"https://github.com/MohamedIrfanAM/Arduino/tree/master/HostelRoomAutomation"
   },
 ]
