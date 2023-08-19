@@ -4,7 +4,7 @@ import SkillCard from './SkillCard';
 import { skills } from '@/constants';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { getNumberofCols} from '@/lib/utils';
+import { getNumberofCols } from '@/lib/window';
 import { motion } from 'framer-motion';
 import { staggerContainer } from '@/lib/style';
 

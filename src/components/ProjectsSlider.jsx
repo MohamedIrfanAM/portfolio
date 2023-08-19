@@ -8,7 +8,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { getNumberofSlides } from "@/lib/utils";
+import { getNumberofSlides } from "@/lib/window";
 
 const ProjectsSlider = () => {
   const slides = getNumberofSlides()
