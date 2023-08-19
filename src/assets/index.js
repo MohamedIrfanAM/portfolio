@@ -10,6 +10,10 @@ import postegres from './postegres.png'
 import c from './c.png'
 import tailwind from './tailwind.png'
 import linux from './linux.png'
+import framer from './framer.png'
+import git from './git.png'
+import docker from './docker.png'
+import nodejs from './nodejs.png'
 
 export {
   cpp,
@@ -23,5 +27,9 @@ export {
   mongodb,
   postegres,
   tailwind,
-  linux
+  linux,
+  nodejs,
+  framer,
+  git,
+  docker,
 }

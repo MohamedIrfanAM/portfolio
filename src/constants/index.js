@@ -1,7 +1,8 @@
 import {AiOutlineYoutube,AiOutlineHome,AiOutlineContacts,AiOutlineUser,AiOutlineLaptop,AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
 import {PiWrench} from 'react-icons/pi'
-import { arduino,c,cpp,react,nextjs,javascript,python,mongodb,postegres,linux,tailwind, codeforces } from '@/assets'
+import { arduino,c,cpp,react,nextjs,javascript,python,mongodb,postegres,linux,tailwind, codeforces,nodejs,framer,git,docker } from '@/assets'
 import { mazecruizer,books2notion,contest2calender,cameraControlledMouse,writingMachine } from '../../public'
+import { frame } from 'framer-motion'
 
 export const intro = "I'm an enthusiastic student of computer science, well-versed in DSA, Robotics, Frontend, Backend, and numerous other domains. I thrive on expanding my knowledge and skills in these areas while seeking new challenges to conquer."
 
@@ -127,6 +128,16 @@ export const skills = [
     icon:nextjs
   },
   {
+    id:14,
+    title:"Framer",
+    icon:framer
+  },
+  {
+    id:13,
+    title:"NodeJS",
+    icon:nodejs
+  },
+  {
     id:8,
     title:"MongoDB",
     icon:mongodb
@@ -137,14 +148,24 @@ export const skills = [
     icon:postegres
   },
   {
-    id:10,
-    title:"Linux",
-    icon:linux
+    id:15,
+    title:"Docker",
+    icon:docker
   },
   {
     id:11,
     title:"Codeforces",
     icon:codeforces
+  },
+  {
+    id:10,
+    title:"Linux",
+    icon:linux
+  },
+  {
+    id:16,
+    title:"Git",
+    icon:git
   },
   {
     id:12,
