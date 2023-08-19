@@ -10,6 +10,7 @@ import {BsBoxArrowInUpRight} from "react-icons/bs"
 import { motion } from "framer-motion"
 import { useTypewriter,Cursor } from "react-simple-typewriter"
 import ParticlesContainer from "./ParticlesContainer"
+import { useState } from "react"
 
 const dancing_script = Dancing_Script({
   subsets:['latin'],
@@ -17,6 +18,7 @@ const dancing_script = Dancing_Script({
 
 const Hero = () => {
   const [subheading] = useTypewriter({words:['Software Developer','CS Student','Technophile','Robotics Enthusiast'],loop:{},typeSpeed:60,deleteSpeed:80})
+  const [buttonHover,setButtonHover] = useState(true)
   return (
     <section className="h-screen w-full p-1" id='hero'>
       <ParticlesContainer/>
@@ -31,13 +33,15 @@ const Hero = () => {
             <div className="font-bold text-primary text-xl sm:text-2xl"><span>{subheading}<Cursor/></span></div>
             <div className="max-w-[300px] mt-1 text-secondary sm:text-md sm:mt-4 sm:max-w-[500px]">{intro}</div>
           </motion.div>
-          <motion.div className="mx-auto mt-5 sm:mx-0 sm:mt-7 flex justify-start gap-4 group z-10" variants={fadeIn("left",'spring',0.5,0.75)} initial='hidden' whileInView='visible'>
-            <Link href='https://drive.google.com/file/d/1-7s7WCv4Hf7OD_agK9RHYO3tRmkKeRsW/view?usp=sharing' target="_blank" className="text-dark bg-gradient-to-r from-primary to bg-cyan-400 hover:scale-110 px-4 py-2 flex justify-between rounded">
+          <motion.div className="mx-auto mt-5 sm:mx-0 sm:mt-7 flex justify-start gap-4 group z-10 " variants={fadeIn("left",'spring',0.5,0.75)} initial='hidden' whileInView='visible'>
+            <Link href='https://drive.google.com/file/d/1-7s7WCv4Hf7OD_agK9RHYO3tRmkKeRsW/view?usp=sharing' target="_blank" className={`relative hover:scale-110 px-4 py-2 flex justify-between rounded ${buttonHover ? 'bg-dark text-primary border border-primary':'text-dark'}`} onMouseEnter={()=>setButtonHover(false)}>
+              {!buttonHover && <motion.span className="absolute inset-0 bg-gradient-to-r from-primary to bg-cyan-400 -z-10 rounded" layoutId="buttonbg"/>}
               Resume
               <BsBoxArrowInUpRight className="ml-1 mt-1 transition-all group-hover:translate-x-1 group-hover:-translate-y-1"/>
             </Link>
-            <Lk to='contact' smooth={true} spy={true}>
-              <button className="text-primary bg-dark border-primary py-2 px-4 rounded border hover:scale-110">
+            <Lk to='contact' smooth={true} spy={true} onMouseEnter={()=>setButtonHover(true)} onMouseLeave={()=>setButtonHover(false)}>
+              <button className={`py-2 px-4 rounded  hover:scale-110 relative ${buttonHover? 'text-dark': 'bg-dark text-primary border border-primary'}`}>
+                {buttonHover && <motion.span className="absolute inset-0 bg-gradient-to-r from-primary to bg-cyan-400 -z-10 rounded" layoutId="buttonbg"/>}
                 Contact
               </button>
             </Lk>
