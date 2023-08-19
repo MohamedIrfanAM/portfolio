@@ -29,8 +29,8 @@ const ProjectsGrid = () => {
   return (
     <motion.div className="flex flex-wrap gap-4 justify-center" variants={staggerContainer(0.1,0.2)}  initial="hidden" animate="visible">
       {projects.map(({id,title,discription,image,icon,link}) => (
-        <motion.div variants={slideIn("left","spring",0.75)}>
-          <ProjectCard key={id} title={title} discription={discription} image={image} icon={icon} link={link}/>
+        <motion.div key={id}  variants={slideIn("left","spring",0.75)}>
+          <ProjectCard title={title} discription={discription} image={image} icon={icon} link={link}/>
         </motion.div>
       ))}
     </motion.div>
