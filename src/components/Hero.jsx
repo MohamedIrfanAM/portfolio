@@ -18,7 +18,7 @@ const dancing_script = Dancing_Script({
 
 const Hero = () => {
   const [subheading] = useTypewriter({words:['Software Developer','CS Student','Technophile','Robotics Enthusiast'],loop:{},typeSpeed:60,deleteSpeed:80})
-  const [buttonHover,setButtonHover] = useState(true)
+  const [buttonHover,setButtonHover] = useState(false)
   return (
     <section className="h-screen w-full p-1" id='hero'>
       <ParticlesContainer/>
