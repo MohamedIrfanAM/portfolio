@@ -29,7 +29,7 @@ const Hero = () => {
         </motion.div>
         <div className="flex flex-col sm:pl-[120px] sm:pt-4">
           <motion.div className="text-center sm:text-left" variants={fadeIn("right","spring",0.1,0.75)} initial='hidden' whileInView='visible'>
-            <div className="text-cyan-400 text-[28px] font-bold sm:text-[45px]">Hi, I'm Mohamed Irfan</div>
+            <div className="text-cyan-400 text-[28px] font-bold sm:text-[45px]">Hi, I&apos;m Mohamed Irfan</div>
             <div className="font-bold text-primary text-xl sm:text-2xl"><span>{subheading}<Cursor/></span></div>
             <div className="max-w-[300px] mt-1 text-secondary sm:text-md sm:mt-4 sm:max-w-[500px]">{intro}</div>
           </motion.div>
