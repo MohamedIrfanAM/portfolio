@@ -11,3 +11,4 @@ Checkout [irfan.live](https://irfan.live/)
 - SwiperJS
 - tsParticles
 - Resend
+- EmailJS
