@@ -1,4 +1,5 @@
 import {AiOutlineYoutube,AiOutlineHome,AiOutlineContacts,AiOutlineUser,AiOutlineLaptop,AiOutlineGithub,AiOutlineTwitter,AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
+import {SiCodeforces} from 'react-icons/si'
 import {PiWrench} from 'react-icons/pi'
 import { arduino,c,cpp,react,nextjs,javascript,python,mongodb,postegres,linux,tailwind, codeforces,nodejs,framer,git,docker } from '@/assets'
 import { mazecruizer,books2notion,contest2calender,cameraControlledMouse,writingMachine,esp32HomeAutomation } from '../../public'
@@ -17,6 +18,11 @@ export const socialLinks = [
     id:"LinkedIn",
     link:"https://www.linkedin.com/in/mohamedirfanam/",
     icon:<AiOutlineLinkedin/>
+  },
+  {
+    id:"Codeforces",
+    link:"https://codeforces.com/profile/irfan_",
+    icon:<SiCodeforces/>
   },
   {
     id:"Twitter",

@@ -46,7 +46,7 @@ const Hero = () => {
               </button>
             </Lk>
           </motion.div>
-          <motion.div className="flex flex-row justify-between text-2xl w-[150px] sm:w-[250px] sm:text-3xl text-primary cursor-pointer mt-8 mx-auto sm:mx-0 sm:mt-[100px] z-10" variants={fadeIn("up",'spring',0.5,0.75)} initial='hidden' whileInView='visible'>
+          <motion.div className="flex flex-row justify-between text-2xl w-[180px] sm:w-[250px] sm:text-3xl text-primary cursor-pointer mt-5 mx-auto sm:mx-0 sm:mt-[100px] z-10" variants={fadeIn("right",'spring',0.5,0.75)} initial='hidden' whileInView='visible'>
             {socialLinks.map(({id,link,icon}) => (
               <Link href={link} key={id} target="_blank" className="hover:text-secondary hover:scale-110">
                 {icon}
