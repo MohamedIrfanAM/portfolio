@@ -82,7 +82,7 @@ export const achievemetns = [
 export const education = [
   {
     id:1,
-    course:"Higer Secondary - Computer Science",
+    course:"Higher Secondary - Computer Science",
     institue:"GVHSS Valapad,Thrissur",
     year:"2020-2022",
     grade:"Grade:97%"
