@@ -76,7 +76,13 @@ export const achievemetns = [
     title:"Second Prize in Sonorous Hackathon",
     conductor:"IEDC CET",
     discription:"Developed a web-camera controlled mouse system that can effectively serve as a replacement for the traditional computer mouse for individuals with limited use of their forelimbs"
-  }
+  },
+  {
+    id:3,
+    title:"First Prize in Micromouse competition",
+    conductor:"Conscientia 2023,Indian Institute of Space Science and Technology",
+    discription:"Developed an autonomouse maze solving robot which uses of Flood Fill Algorithm"
+  },
 ]
 
 export const education = [
