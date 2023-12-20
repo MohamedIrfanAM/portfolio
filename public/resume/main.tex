@@ -1,0 +1,182 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth}
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    { \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Mohamed Irfan Rashid AM}}}} % First name
+
+    \vspace{6pt}
+
+    {\Large Full Stack Developer $\sim$ Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+    \icon{Globe}{11}{\href{https://irfan.live/}{irfan.live}}\\
+    \icon{Phone}{11}{+91 7994747426 }\\
+    \icon{MapMarker}{11}{Trivandrum, India}\\
+
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    \icon{Envelope}{11}{\href{mailto:mohamed.irfan.rashid.am@gmail.com}{mohamed.irfan.rashid.am@gmail.com}}\\
+    \icon{Github}{11}{\href{https://github.com/mohamedirfanam}{github.com/mohamedirfanam}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/mohamedirfanam/}{/in/mohamedirfanam/}}\\
+
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+    \vspace{-6pt}
+
+    %Dummy text
+    {I'm an enthusiastic student of computer
+        science, well-versed in DSA, Robotics,
+        Frontend, Backend, and numerous other
+        domains. I thrive on expanding my
+        knowledge and skills in these areas while
+        seeking new challenges to conquer.} \\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+        C++, C, Javascript, Typescript, Python, Java, SQL
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+        React, Nextjs, Tailwind, Docker, PostegreSQL, Linux, Git
+    \end{minipage}
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+    {NextJS}
+    {\href{https://textrade.irfan.live/}{textrade.irfan.live} - Full Stack E Commerce Reselling Platform}
+    {\href{https://github.com/MohamedIrfanAM/aleph-zero}{github.com/MohamedIrfanAM/textrade}}
+    {NextJS full stack, React with tailwind CSS, PostegreSQL database with prisma ORM, JWT authentication sessions, }
+    \entry
+    {OpenCV}
+    {CameraControlledMouse}
+    {\href{https://github.com/MohamedIrfanAM/CameraControlledMouse}{github.com/MohamedIrfanAM/CameraControlledMouse}}
+    {OpenCV program that detects facial expressions to controlled mouse. Enables people with arm disability to use mouse with as much freedom as a normal person, Won 2nd prize for Sonorous hackathon conducted by IEDC CET }
+    \entry
+    {Arduino}
+    {Maze Solving Robot}
+    {\href{https://github.com/MohamedIrfanAM/mazecruizer}{github.com/MohamedIrfanAM/mazecruizer}}
+    {Mazesolving robot, that uses various path finding algorithms such as A* and Flood fill to find shortest path and navigate through the maze in shortest possible time. Won 1st prize for micromouse competitions at IIST Trivnadrum and TKM Kollam}
+    \entry
+    {Webscraping}
+    {Books2Notion}
+    {\href{https://github.com/MohamedIrfanAM/books2notion}{github.com/MohamedIrfanAM/books2notion}}
+    {Webscraper that syncs highlights from google books to notion, utilized google apis like books,drive}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+    {2020 - 2022}
+    {Higher secondary, Computer Science}
+    {GVHSS Valapd}
+    {97 \%}
+    \entry
+    {2022 - 2026}
+    {B.Tech Computer Science and Engineering}
+    {College of Engineering Trivandrum}
+    {9.55 CGPA}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+    \entry
+    {2021 - Present}
+    {Competitive Programming}
+    {}
+    {\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {1235 on Codeforces}
+            \item {1449 on CodeChef}
+        \end{itemize}
+        \texttt{C++} \slashsep \texttt{DSA}}
+    \entry
+    {2022 -- }
+    {OpenSource}
+    {}
+    {\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {Contributed to opensource projects like cpbooster,contest2calendar, books2notion}
+                  % \item \lipsum[1][3-4]
+        \end{itemize}
+        \texttt{Typescript} \slashsep \texttt{Python}}
+    \entry
+    {2018 --  \\\footnotesize{}}
+    {Robotics}
+    {}
+    {\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {Fluent in Arduino, Rasberry pi programming}
+            \item {Projects including GRBL CNC plotter,ESP32 IOT automation etc}
+        \end{itemize}
+        \texttt{C++} \slashsep \texttt{MicroPython}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Languages}
+\vspace{-6pt}
+
+\hspace{26mm} \textbf{English} - B2+, \textbf{ Malayalam} - native, \textbf{Hindi} - B2, \textbf{Arabic} - B2
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
