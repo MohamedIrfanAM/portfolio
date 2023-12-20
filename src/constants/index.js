@@ -2,7 +2,7 @@ import {AiOutlineYoutube,AiOutlineHome,AiOutlineContacts,AiOutlineUser,AiOutline
 import {SiCodeforces} from 'react-icons/si'
 import {PiWrench} from 'react-icons/pi'
 import { arduino,c,cpp,react,nextjs,javascript,python,mongodb,postegres,linux,tailwind, codeforces,nodejs,framer,git,docker } from '@/assets'
-import { mazecruizer,books2notion,contest2calender,cameraControlledMouse,writingMachine,esp32HomeAutomation } from '../../public'
+import { mazecruizer,books2notion,contest2calender,cameraControlledMouse,writingMachine,esp32HomeAutomation,textrade } from '../../public'
 
 export const intro = "I'm an enthusiastic student of computer science, well-versed in DSA, Robotics, Frontend, Backend, and numerous other domains. I thrive on expanding my knowledge and skills in these areas while seeking new challenges to conquer."
 
@@ -186,6 +186,14 @@ export const skills = [
 ]
 
 export const projects = [
+  {
+    id:0,
+    title:"Textrade",
+    discription:"A web app for trading used books in college",
+    image:textrade,
+    icon:<AiOutlineGithub/>,
+    link:"https://github.com/mohamedirfanam/textrade"
+  },
   {
     id:1,
     title:"MazeCruizer",

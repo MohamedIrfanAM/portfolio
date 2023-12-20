@@ -6,6 +6,7 @@ import contest2calender from './contest2calender.jpg'
 import writingMachine from './writingMachine.jpg'
 import cameraControlledMouse from './cameraControlledMouse.jpg'
 import esp32HomeAutomation from './esp32automation.jpg'
+import textrade from './textrade.png'
 
 export {
   mazecruizer,
@@ -15,5 +16,6 @@ export {
   contest2calender,
   cameraControlledMouse,
   writingMachine,
-  esp32HomeAutomation
+  esp32HomeAutomation,
+  textrade
 }
