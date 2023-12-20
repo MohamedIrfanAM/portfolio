@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="max-w-[300px] mt-1 text-secondary sm:text-md sm:mt-4 sm:max-w-[500px]">{intro}</div>
           </motion.div>
           <motion.div className="mx-auto mt-5 sm:mx-0 sm:mt-7 flex justify-start gap-4 group z-10 " variants={fadeIn("left",'spring',0.5,0.75)} initial='hidden' whileInView='visible'>
-            <Link href='https://drive.google.com/file/d/1-7s7WCv4Hf7OD_agK9RHYO3tRmkKeRsW/view?usp=sharing' target="_blank" className={`relative hover:scale-110 px-4 py-2 flex justify-between rounded ${buttonHover ? 'bg-dark text-primary border border-primary':'text-dark'}`} onMouseEnter={()=>setButtonHover(false)}>
+            <Link href='/resume' target="_blank" className={`relative hover:scale-110 px-4 py-2 flex justify-between rounded ${buttonHover ? 'bg-dark text-primary border border-primary':'text-dark'}`} onMouseEnter={()=>setButtonHover(false)}>
               {!buttonHover && <motion.span className="absolute inset-0 bg-gradient-to-r from-primary to bg-cyan-400 -z-10 rounded" layoutId="buttonbg"/>}
               Resume
               <BsBoxArrowInUpRight className="ml-1 mt-1 transition-all group-hover:translate-x-1 group-hover:-translate-y-1"/>
